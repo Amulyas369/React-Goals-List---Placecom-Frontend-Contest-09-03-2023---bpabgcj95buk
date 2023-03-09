@@ -19,14 +19,14 @@ const GoalForm = ({setAllGoalsProps,allGoalsProps}) => {
             name='goal'
             value={value} 
             placeholder='Goal...' 
-            onChange={e=>setFormData({...formData,name:e.target.value})}
+            onChange={e=>setFormData({...formData,goal:e.target.value})}
           />
           <input 
             type="text"
             name="by"
             value={value}
             placeholder='By...'
-            onChange={e=>setFormData({...formData,name:e.target.value})}
+            onChange={e=>setFormData({...formData,by:e.target.value})}
           />
           <button >Add</button>
         </form>
